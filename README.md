@@ -1,9 +1,11 @@
 # TodakTodak-
-투두리스트 프로젝트 투닥투닥입니다.
+투두리스트 프로젝트 투닥투닥입니다. 
 
 # 까먹지 말 초기설정
 git config --global user.name "유저명"
+
 git config --global user.email "[이메일]"
+
 git --list
 
 # SSH 코드 생성 및 >> ssh 폴더 id_rsa 파일 안 키 settings에 키 추가
