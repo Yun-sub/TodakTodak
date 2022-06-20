@@ -22,7 +22,7 @@ git clone origin 브랜치이름
 
 git add 파일이름|.
 
-git pull origin 브랜치이름
+git pull origin 브랜치이름 << 브랜치 별로 다 
 
 git commit -m "남길 소제목"
 
