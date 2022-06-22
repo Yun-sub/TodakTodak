@@ -14,9 +14,11 @@ ssh-keygen -t ed25519 -C "이메일"
 안되면 ssh-keygen -t rsa -C "이메일"
 
 # pull > commit > push 과정
-git init 
+git init
 
 git remote add origin git@github.com:Yun-sub/TodakTodak.git
+
+git checkout 브랜치이름 << 이동할때 명심..
 
 git clone origin 브랜치이름
 
