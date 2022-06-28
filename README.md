@@ -1,5 +1,5 @@
-# TodakTodak-
-투두리스트 프로젝트 투닥투닥입니다. 
+# TodotList-
+투두리스트 프로젝트 투닷리스트입니다. 
 
 # 까먹지 말 초기설정
 git config --global user.name "유저명"
