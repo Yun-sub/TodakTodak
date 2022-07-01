@@ -10,18 +10,21 @@ function App() {
   const {text} = inputs;
 
   const onChange = (event) => {
-    const text = event.target.value;    
+    const text = event.target.value;
+    if(text === ""){
+      return;
+    }    
     setInputs({...inputs, text});
   };
 
   const onCreate = () => {
+    if(text === ""){
+      return;
+    }
     const todo = {
       id: "td00" + nextId.current,
       text
     };
-    if(text === ""){
-      return;
-    }
     setTodos([...toDos, todo]);
     setInputs({text: ""});
     nextId.current += 1;
@@ -29,6 +32,7 @@ function App() {
   };
 
   const onSubmit = (event) => {
+    console.log(toDos);
     event.preventDefault();
     if(text === ""){
       return;
