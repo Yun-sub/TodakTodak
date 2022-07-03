@@ -11,3 +11,13 @@ Problem
 - 할 일 완료 체크박스 미완성
 - 할 일 삭제 버튼 미완성 (filter 공부)
 - 근본적인 구조 다시 짜보기
+
+# second homework
+Update
+- NavBar, Calendar, Weather, Today 컴포넌트 추가
+- ToDoList 컴포넌트 재구성 (할 일 완료 및 삭제 구현)
+- 남은 할 일 수 제거
+
+Problem
+- CSS
+- Analysis 미완성
