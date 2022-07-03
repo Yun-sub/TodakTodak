@@ -1,0 +1,67 @@
+/* ------------틀------------ */
+
+body {
+  margin: 0;
+}
+
+/* ------------nav------------ */
+
+.nav {
+  background-color: bisque;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 30px;
+  color: black;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav_contents {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 21px;
+  color: black;
+}
+
+/* ------------header2------------ */
+
+.header2 {
+  justify-content: center;
+  align-items: center;
+}
+
+.weather {
+  margin: 50px;
+}
+
+.today {
+  margin: 50px;
+}
+
+/* ------------main------------ */
+.main {
+  justify-content: center;
+}
+
+.calendar {
+  align-items: center;
+  margin: 50px;
+}
+
+.todo {
+  margin: 50px;
+}

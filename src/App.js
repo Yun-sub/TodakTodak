@@ -1,44 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
+import NavBar from "./components/NavBar";
+import WeatherBar from "./components/WeatherBar";
+import Calendar from "react-calendar";
+import Today from "./components/Today";
+import "./styles.css";
+import "react-calendar/dist/Calendar.css";
+import ToDoList from "./components/ToDoList/ToDoList";
 
 function App() {
-  const [toDo, setToDo] = useState("");
-  const [toDos, setToDos] = useState([]);
-  const onChange = (event) => setToDo(event.target.value);
-  const onSubmit = (event) => {
-    event.preventDefault();
-    if (toDo === "") {
-      return;
-    }
-    setToDo("");
-    setToDos((currentArray) => [toDo, ...currentArray]);
-  };
-  const onDelete = (event) => {
-    const newToDos = toDos.filter((toDos) => toDos.text !== event);
-    setToDos(newToDos);
-    event.target.parentElement.remove();
-  };
   return (
-    <div>
-      <h1>My To Do List [Count: {toDos.length}]</h1>
-      <form onSubmit={onSubmit}>
-        <input
-          onChange={onChange}
-          value={toDo}
-          type="text"
-          placeholder="Write your to do..."
-        />
-        <button>Add To Do</button>
-      </form>
-      <hr />
-      <ul>
-        {toDos.map((item, index) => (
-          <li key={index} style={{ listStyleType: "none" }}>
-            <input type="checkbox"></input>
-            {item}
-            <button onClick={onDelete}>X</button>
-          </li>
-        ))}
-      </ul>
+    <div className="header">
+      <NavBar />
+      <div className="header2" style={{ display: "flex" }}>
+        <WeatherBar />
+        <Today />
+      </div>
+      <div className="main" style={{ display: "flex" }}>
+        <Calendar />
+        <ToDoList />
+      </div>
     </div>
   );
 }
