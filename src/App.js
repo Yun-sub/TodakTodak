@@ -1,65 +1,21 @@
-import React, { useState, useRef } from "react";
-import Todo from "./Todo";
-import AddToDo from "./AddToDo";
-
+import { Routes, Route } from "react-router-dom";
+import Main from "./pages/Main";
+import Analysis from "./pages/Analysis";
+import Setting from "./pages/Setting";
+import Nav from "./Nav";
 
 function App() {
-  const nextId = useRef(0);
-  const [toDos, setTodos] = useState([]);
-  const [inputs, setInputs] = useState("");
-  const {text} = inputs;
-
-  const onChange = (event) => {
-    const text = event.target.value;
-    if(text === ""){
-      return;
-    }    
-    setInputs({...inputs, text});
-  };
-
-  const onCreate = () => {
-    if(text === ""){
-      return;
-    }
-    const todo = {
-      id: "td00" + nextId.current,
-      text
-    };
-    setTodos([...toDos, todo]);
-    setInputs({text: ""});
-    nextId.current += 1;
-
-  };
-
-  const onSubmit = (event) => {
-    console.log(toDos);
-    event.preventDefault();
-    if(text === ""){
-      return;
-    }
-    const todo = {
-      id: "td00" + nextId.current,
-      text
-    };
-    setInputs({text: ""});
-    setTodos([...toDos, todo]);
-
-    nextId.current += 1;
-  };
-
-  const onRemove = (id) => {
-    setTodos(toDos.filter((todo) => todo.id !== id));
-  };
-
-
   return (
-    <div>
-      <AddToDo text = {text} onSubmit = {onSubmit} onChange = {onChange} onCreate = {onCreate}/>
-      {toDos.map((todo) => (
-        <Todo toDos={todo} key={todo.id} onRemove={onRemove} />
-      ))}
-    </div>
+    <>
+      <Nav />
+      <div>
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/analysis' element={<Analysis />} />
+          <Route path='/settings' element={<Setting />} />
+        </Routes>
+      </div>
+    </>
   );
 }
-
 export default App;

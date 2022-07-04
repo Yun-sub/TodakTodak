@@ -3,7 +3,7 @@ import { Button, TextField } from "@mui/material";
 
 function AddToDo({ text, onSubmit, onChange, onCreate }) {
   return (
-    <div>
+    <div id='formbar'>
       <form onSubmit={onSubmit}>
         <TextField
           type='text'
