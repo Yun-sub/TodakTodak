@@ -44,3 +44,7 @@ nav li:active {
 nav li:hover {
   background-color: #777;
 }
+
+.Grid {
+  display: inline-flex;
+}

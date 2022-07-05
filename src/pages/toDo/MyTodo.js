@@ -10,23 +10,7 @@ function MyTodo() {
 
   const onChange = (event) => {
     const text = event.target.value;
-    if (text === "") {
-      return;
-    }
     setInputs({ ...inputs, text });
-  };
-
-  const onCreate = () => {
-    if (text === "") {
-      return;
-    }
-    const todo = {
-      id: "td00" + nextId.current,
-      text,
-    };
-    setTodos([...toDos, todo]);
-    setInputs({ text: "" });
-    nextId.current += 1;
   };
 
   const onSubmit = (event) => {
@@ -51,10 +35,10 @@ function MyTodo() {
   return (
     <div>
       <AddToDo
-        text={text}
+        text={text || ""}
         onSubmit={onSubmit}
         onChange={onChange}
-        onCreate={onCreate}
+        onCreate={onSubmit}
       />
       {toDos.map((todo) => (
         <Todo toDos={todo} key={todo.id} onRemove={onRemove} />

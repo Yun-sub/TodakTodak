@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, TextField } from "@mui/material";
 
-function AddToDo({ text, onSubmit, onChange, onCreate }) {
+function AddToDo({ text, onSubmit, onChange }) {
   return (
-    <div id='formbar'>
+    <div>
       <form onSubmit={onSubmit}>
         <TextField
           type='text'
@@ -12,7 +12,7 @@ function AddToDo({ text, onSubmit, onChange, onCreate }) {
           label='Write your to do...'
           variant='outlined'
         />
-        <Button variant='contained' onClick={onCreate}>
+        <Button variant='contained' onClick={onSubmit}>
           Add
         </Button>
       </form>
