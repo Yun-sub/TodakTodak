@@ -1,27 +1,27 @@
 # TodakTodak-
 
-ÅõµÎ¸®½ºÆ® ÇÁ·ÎÁ§Æ® Åõ´ÚÅõ´ÚÀÔ´Ï´Ù.
+íˆ¬ë‘ë¦¬ìŠ¤íŠ¸ í”„ë¡œì íŠ¸ íˆ¬ë‹¥íˆ¬ë‹¥ìž…ë‹ˆë‹¤.
 
-# 1 week
-
-Update
-
-- ÇÒ ÀÏ input
-- ÇÒ ÀÏ Ãß°¡ ¹öÆ°
-- ÇÒ ÀÏÀÌ ¸î °³ Ãß°¡ µÇ¾ú´ÂÁö h1¿¡ Ç¥½Ã
-
-# second homework
+# 1st week
 
 Update
 
-- ³¯¾¾ Ç¥½Ã
-- ToDoList ÄÄÆ÷³ÍÆ® Àç±¸¼º (ÇÒ ÀÏ ¿Ï·á ¹× »èÁ¦ ±¸Çö)
+- í•  ì¼ input
+- í•  ì¼ ì¶”ê°€ ë²„íŠ¼
+- í•  ì¼ì´ ëª‡ ê°œ ì¶”ê°€ ë˜ì—ˆëŠ”ì§€ h1ì— í‘œì‹œ
 
-# third homework
+# 2nd week
 
 Update
 
-- pages µð·ºÅä¸® Ãß°¡ + navBar ±¸Çö
-- Calendar¿¡¼­ ¼±ÅÃµÈ ³¯Â¥ Ç¥½Ã
+- ë‚ ì”¨ í‘œì‹œ
+- ToDoList ì»´í¬ë„ŒíŠ¸ ìž¬êµ¬ì„± (í•  ì¼ ì™„ë£Œ ë° ì‚­ì œ êµ¬í˜„)
+
+# 3rd week
+
+Update
+
+- pages ë””ë ‰í† ë¦¬ ì¶”ê°€ + navBar êµ¬í˜„
+- Calendarì—ì„œ ì„ íƒëœ ë‚ ì§œ í‘œì‹œ
   Bugfix
-- ¸ðµâÈ­ ÈÄ Ã¹ ¹øÂ° ±ÛÀÚ »èÁ¦ ¼öÁ¤
+- ëª¨ë“ˆí™” í›„ ì²« ë²ˆì§¸ ê¸€ìž ì‚­ì œ ìˆ˜ì •
