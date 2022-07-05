@@ -1,21 +1,31 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ onSelect }) => {
   return (
     <nav className="nav">
-      <a href="/" className="title">
+      <button
+        value="0"
+        className="title"
+        onClick={(event) => onSelect(event.target.value)}
+      >
         ToDot-List
-      </a>
+      </button>
       <ul>
         <li className="nav_contents">
-          <a href="/Calendar">Calendar</a>
+          <button value="0" onClick={(event) => onSelect(event.target.value)}>
+            Calendar
+          </button>
         </li>
         <li className="nav_contents">
-          <a href="/Analysis">Analysis</a>
+          <button value="1" onClick={(event) => onSelect(event.target.value)}>
+            Analysis
+          </button>
         </li>
         <li className="nav_contents">
-          <a href="/Setting">Setting</a>
+          <button value="2" onClick={(event) => onSelect(event.target.value)}>
+            Setting
+          </button>
         </li>
       </ul>
     </nav>

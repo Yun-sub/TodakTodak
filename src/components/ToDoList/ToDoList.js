@@ -1,11 +1,13 @@
 import React, { useCallback, useRef, useState } from "react";
 import ToDoItemList from "./ToDoItemList.js";
 import ToDoInput from "./ToDoInput.js";
+import ToDoAdd from "./ToDoAdd.js";
 import "./ToDo.css";
 
 function ToDoList() {
   const [todos, setTodos] = useState([]);
   const nextId = useRef(1);
+  const [viewToDoInput, setViewToDoInput] = useState(false);
 
   const onInsert = useCallback(
     (text) => {
@@ -38,10 +40,19 @@ function ToDoList() {
     [todos]
   );
 
+  const onView = () => {
+    setViewToDoInput(true);
+  };
+
+  const onNoView = () => {
+    setViewToDoInput(false);
+  };
+
   return (
-    <div>
-      <ToDoInput onInsert={onInsert} />
+    <div className="main_todolist">
       <ToDoItemList todos={todos} onRemove={onRemove} onToggle={onToggle} />
+      {viewToDoInput ? <ToDoInput onInsert={onInsert} /> : null}
+      <ToDoAdd onView={onView} onNoView={onNoView} />
     </div>
   );
 }

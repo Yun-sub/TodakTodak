@@ -1,23 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./components/NavBar";
 import WeatherBar from "./components/WeatherBar";
-import Calendar from "react-calendar";
 import Today from "./components/Today";
 import "./styles.css";
-import "react-calendar/dist/Calendar.css";
-import ToDoList from "./components/ToDoList/ToDoList";
+import Main from "./pages/Main";
+import Analysis from "./pages/Analysis";
+import Setting from "./pages/Setting";
 
 function App() {
+  const [index, setIndex] = useState("0");
+  const onSelect = (value) => {
+    setIndex(value);
+  };
+
   return (
     <div className="header">
-      <NavBar />
+      <NavBar onSelect={onSelect} />
       <div className="header2" style={{ display: "flex" }}>
         <WeatherBar />
         <Today />
       </div>
       <div className="main" style={{ display: "flex" }}>
-        <Calendar />
-        <ToDoList />
+        {index === "0" ? <Main /> : null}
+
+        {index === "1" ? <Analysis /> : null}
+
+        {index === "2" ? <Setting /> : null}
       </div>
     </div>
   );
