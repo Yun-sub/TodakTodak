@@ -23,5 +23,5 @@ Update
 
 - pages 디렉토리 추가 + navBar 구현
 - Calendar에서 선택된 날짜 표시
-  Bugfix
+Bugfix
 - 모듈화 후 첫 번째 글자 삭제 수정
