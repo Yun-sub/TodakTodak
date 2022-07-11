@@ -8,6 +8,9 @@ git config --global user.email "[이메일]"
 
 git --list
 
+--global or --local로 확인해보기
+ex) git --local --list
+
 # SSH 코드 생성 및 >> ssh 폴더 id_rsa 파일 안 키 settings에 키 추가
 ssh-keygen -t ed25519 -C "이메일" 
 
@@ -31,4 +34,3 @@ git commit -m "남길 소제목"
 git push origin 브랜치이름
 
 아마도 이 과정인듯?
-화이팅
