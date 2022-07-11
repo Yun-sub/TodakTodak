@@ -44,15 +44,17 @@ function ToDoList() {
     setViewToDoInput(true);
   };
 
-  const onNoView = () => {
+  const onCloseView = () => {
     setViewToDoInput(false);
   };
 
   return (
     <div className="main_todolist">
       <ToDoItemList todos={todos} onRemove={onRemove} onToggle={onToggle} />
-      {viewToDoInput ? <ToDoInput onInsert={onInsert} /> : null}
-      <ToDoAdd onView={onView} onNoView={onNoView} />
+      {viewToDoInput ? (
+        <ToDoInput onInsert={onInsert} onCloseView={onCloseView} />
+      ) : null}
+      <ToDoAdd onView={onView} />
     </div>
   );
 }

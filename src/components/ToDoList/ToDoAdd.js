@@ -1,15 +1,13 @@
 import React from "react";
 import "./ToDo.css";
-import { MdAdd, MdOutlineClose } from "react-icons/md";
+import { MdAdd } from "react-icons/md";
 
-function ToDoAdd({ onView, onNoView }) {
+function ToDoAdd({ onView }) {
   return (
     <div className="ToDoAdd">
-      <button onClick={onView}>
+      <button className="ToDoAddButton" onClick={onView}>
         <MdAdd />
-      </button>
-      <button onClick={onNoView}>
-        <MdOutlineClose />
+        일정추가
       </button>
     </div>
   );

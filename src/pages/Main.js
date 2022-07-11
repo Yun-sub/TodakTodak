@@ -11,7 +11,7 @@ function Main() {
       <div className="calendar">
         <Calendar
           onChange={onChange}
-          formatDay={(locale, date) => moment(date).format("DD")}
+          formatDay={(locale, date) => moment(date).format("D")}
           value={value}
           showNeighboringMonth={false}
         />
