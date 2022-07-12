@@ -2,10 +2,15 @@ import { useEffect, useState } from "react";
 
 export default function Weather() {
   const [weather, setWeather] = useState([]);
+  let style = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  };
 
   useEffect(() => {
     fetch(
-      "https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=가릴게요~"
+      "https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=7764b29434c955dbfd32e6efda650755"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -19,7 +24,7 @@ export default function Weather() {
       });
   }, []);
   return (
-    <div>
+    <div style={style}>
       <img
         src={"http://openweathermap.org/img/wn/" + weather.icon + "@2x.png"}
       />

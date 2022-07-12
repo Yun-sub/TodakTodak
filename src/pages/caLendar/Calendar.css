@@ -84,6 +84,8 @@
   text-align: center;
   line-height: 40px;
   font-size: 1.4em;
+  background-color: #cbb6a2;
+  font-weight: bold;
 }
 .react-calendar__tile:disabled {
   background-color: #a2a2a2;
