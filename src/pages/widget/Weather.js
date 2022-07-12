@@ -10,7 +10,7 @@ export default function Weather() {
 
   useEffect(() => {
     fetch(
-      "https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=7764b29434c955dbfd32e6efda650755"
+      "https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid="
     )
       .then((res) => res.json())
       .then((data) => {
