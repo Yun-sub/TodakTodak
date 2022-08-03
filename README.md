@@ -1,36 +1,48 @@
+## ÇÊ¿äÇÑ ¸ğµâ
+
+npm i firebase
+npm i react-router-dom
+npm install @mui/material @emotion/react @emotion/styled
+
+## ÁøÇà»óÈ²
+
 # TodotList-
-íˆ¬ë‘ë¦¬ìŠ¤íŠ¸ í”„ë¡œì íŠ¸ íˆ¬ë‹·ë¦¬ìŠ¤íŠ¸ì…ë‹ˆë‹¤. 
 
-# ê¹Œë¨¹ì§€ ë§ ì´ˆê¸°ì„¤ì •
-git config --global user.name "ìœ ì €ëª…"
+ÅõµÎ¸®½ºÆ® ÇÁ·ÎÁ§Æ® Åõ´å¸®½ºÆ®ÀÔ´Ï´Ù.
 
-git config --global user.email "[ì´ë©”ì¼]"
+# ±î¸ÔÁö ¸» ÃÊ±â¼³Á¤
+
+git config --global user.name "À¯Àú¸í"
+
+git config --global user.email "[ÀÌ¸ŞÀÏ]"
 
 git --list
 
---global or --localë¡œ í™•ì¸í•´ë³´ê¸°
+--global or --local·Î È®ÀÎÇØº¸±â
 ex) git --local --list
 
-# SSH ì½”ë“œ ìƒì„± ë° >> ssh í´ë” id_rsa íŒŒì¼ ì•ˆ í‚¤ settingsì— í‚¤ ì¶”ê°€
-ssh-keygen -t ed25519 -C "ì´ë©”ì¼" 
+# SSH ÄÚµå »ı¼º ¹× >> ssh Æú´õ id_rsa ÆÄÀÏ ¾È Å° settings¿¡ Å° Ãß°¡
 
-ì•ˆë˜ë©´ ssh-keygen -t rsa -C "ì´ë©”ì¼"
+ssh-keygen -t ed25519 -C "ÀÌ¸ŞÀÏ"
 
-# pull > commit > push ê³¼ì •
+¾ÈµÇ¸é ssh-keygen -t rsa -C "ÀÌ¸ŞÀÏ"
+
+# pull > commit > push °úÁ¤
+
 git init
 
 git remote add origin git@github.com:Yun-sub/TodakTodak.git
 
-git checkout ë¸Œëœì¹˜ì´ë¦„ << ì´ë™í• ë•Œ ëª…ì‹¬..
+git checkout ºê·£Ä¡ÀÌ¸§ << ÀÌµ¿ÇÒ¶§ ¸í½É..
 
-git clone origin ë¸Œëœì¹˜ì´ë¦„
+git clone origin ºê·£Ä¡ÀÌ¸§
 
-git pull origin ë¸Œëœì¹˜ì´ë¦„ << ë¸Œëœì¹˜ ë³„ë¡œ ë‹¤ 
+git pull origin ºê·£Ä¡ÀÌ¸§ << ºê·£Ä¡ º°·Î ´Ù
 
-git add íŒŒì¼ì´ë¦„|.
+git add ÆÄÀÏÀÌ¸§|.
 
-git commit -m "ë‚¨ê¸¸ ì†Œì œëª©"
+git commit -m "³²±æ ¼ÒÁ¦¸ñ"
 
-git push origin ë¸Œëœì¹˜ì´ë¦„
+git push origin ºê·£Ä¡ÀÌ¸§
 
-ì•„ë§ˆë„ ì´ ê³¼ì •ì¸ë“¯?
+¾Æ¸¶µµ ÀÌ °úÁ¤ÀÎµí?
