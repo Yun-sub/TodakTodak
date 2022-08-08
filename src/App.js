@@ -1,9 +1,7 @@
-import logo from "./logo.svg";
-import "./App.css";
+import SignIn from "./components/auth/SignIn";
 
 function App() {
-  return <div></div>;
-  //로그인 여부 판별
+  return <SignIn />;
 }
 
 export default App;

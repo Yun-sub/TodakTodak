@@ -1,0 +1,57 @@
+/* SignIn */
+.Sign_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.Sign_Form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.Sign_Input_Title {
+  display: inline;
+  cursor: pointer;
+}
+
+.Sign_Input_Box {
+  border: 1px solid rgb(141, 137, 137);
+  border-radius: 11px;
+  margin-bottom: 18px;
+  padding: 0.5rem;
+}
+
+.Sign_Input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.Sign_Input label {
+  font-size: 14px;
+}
+
+.Sign_Input input {
+  width: 370px;
+  height: 26px;
+  font-size: 18px;
+  margin-top: 5px;
+  padding-left: 0px;
+  border: 0;
+}
+
+.Sign_Input input:focus {
+  outline: none;
+}
+
+.Sign_Btn {
+  height: 70px;
+  border-radius: 11px;
+  color: white;
+  font-size: 22px;
+  font-weight: 550;
+  background-color: rgb(230, 54, 54);
+}
